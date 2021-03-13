@@ -13,6 +13,11 @@
 		89706BDB25FBA9720083D5E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89706BD925FBA9720083D5E8 /* Main.storyboard */; };
 		89706BDD25FBA9770083D5E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89706BDC25FBA9770083D5E8 /* Assets.xcassets */; };
 		89706BE025FBA9770083D5E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89706BDE25FBA9770083D5E8 /* LaunchScreen.storyboard */; };
+		89706BE925FBAAEC0083D5E8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89706BE825FBAAEC0083D5E8 /* LoginViewController.swift */; };
+		89706BEC25FBAB230083D5E8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89706BEB25FBAB230083D5E8 /* HomeViewController.swift */; };
+		89706BEF25FBAB430083D5E8 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89706BEE25FBAB430083D5E8 /* ImageSelectViewController.swift */; };
+		89706BF225FBAB5D0083D5E8 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89706BF125FBAB5D0083D5E8 /* PostViewController.swift */; };
+		89706BF525FBAB730083D5E8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89706BF425FBAB730083D5E8 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		89706BDC25FBA9770083D5E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89706BDF25FBA9770083D5E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89706BE125FBA9770083D5E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89706BE825FBAAEC0083D5E8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		89706BEB25FBAB230083D5E8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		89706BEE25FBAB430083D5E8 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
+		89706BF125FBAB5D0083D5E8 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		89706BF425FBAB730083D5E8 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,11 @@
 				89706BD325FBA9720083D5E8 /* AppDelegate.swift */,
 				89706BD525FBA9720083D5E8 /* SceneDelegate.swift */,
 				89706BD725FBA9720083D5E8 /* ViewController.swift */,
+				89706BE825FBAAEC0083D5E8 /* LoginViewController.swift */,
+				89706BEB25FBAB230083D5E8 /* HomeViewController.swift */,
+				89706BEE25FBAB430083D5E8 /* ImageSelectViewController.swift */,
+				89706BF125FBAB5D0083D5E8 /* PostViewController.swift */,
+				89706BF425FBAB730083D5E8 /* SettingViewController.swift */,
 				89706BD925FBA9720083D5E8 /* Main.storyboard */,
 				89706BDC25FBA9770083D5E8 /* Assets.xcassets */,
 				89706BDE25FBA9770083D5E8 /* LaunchScreen.storyboard */,
@@ -137,6 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89706BEF25FBAB430083D5E8 /* ImageSelectViewController.swift in Sources */,
+				89706BEC25FBAB230083D5E8 /* HomeViewController.swift in Sources */,
+				89706BF225FBAB5D0083D5E8 /* PostViewController.swift in Sources */,
+				89706BF525FBAB730083D5E8 /* SettingViewController.swift in Sources */,
+				89706BE925FBAAEC0083D5E8 /* LoginViewController.swift in Sources */,
 				89706BD825FBA9720083D5E8 /* ViewController.swift in Sources */,
 				89706BD425FBA9720083D5E8 /* AppDelegate.swift in Sources */,
 				89706BD625FBA9720083D5E8 /* SceneDelegate.swift in Sources */,
