@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N6N-6x-Z3U">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--ホーム-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="Home" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,12 +18,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="home" id="IAw-SA-ZSY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-290" y="-70"/>
+            <point key="canvasLocation" x="-1046" y="660"/>
         </scene>
-        <!--Image Select View Controller-->
+        <!--投稿-->
         <scene sceneID="QUp-5b-0Vb">
             <objects>
                 <viewController storyboardIdentifier="ImageSelect" id="QGf-at-Qdl" customClass="ImageSelectViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,12 +34,13 @@
                         <viewLayoutGuide key="safeArea" id="bHM-4Y-VRv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="投稿" image="camera" id="nxi-u3-vyD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3jb-g3-GfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="545" y="660"/>
+            <point key="canvasLocation" x="-313" y="660"/>
         </scene>
-        <!--Setting View Controller-->
+        <!--設定-->
         <scene sceneID="gmT-EL-O8f">
             <objects>
                 <viewController storyboardIdentifier="Setting" id="pou-7j-fLk" customClass="SettingViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -48,10 +50,11 @@
                         <viewLayoutGuide key="safeArea" id="Dus-Qm-wNw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="設定" image="setting" id="LJW-EP-SVs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lUt-SX-SxM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1009" y="660"/>
+            <point key="canvasLocation" x="429" y="660"/>
         </scene>
         <!--Post View Controller-->
         <scene sceneID="aEy-I8-CpL">
@@ -66,22 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sTI-hh-XZw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-170" y="660"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="g1d-Dt-kNK">
-            <objects>
-                <viewController id="zdd-pt-aJs" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="k1M-nm-alK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="VAz-6H-DN1"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bhe-EN-Auq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-171" y="1375"/>
+            <point key="canvasLocation" x="374" y="1431"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="zzH-Mg-VUY">
@@ -96,10 +84,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pcs-3s-YC5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="545" y="-24"/>
+            <point key="canvasLocation" x="-245" y="1399"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ghw-M6-Vfj">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="N6N-6x-Z3U" customClass="TabBarController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wxw-Ac-rz1">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="8uR-Ue-1Fy"/>
+                        <segue destination="QGf-at-Qdl" kind="relationship" relationship="viewControllers" id="tPY-xg-IOO"/>
+                        <segue destination="pou-7j-fLk" kind="relationship" relationship="viewControllers" id="1Gq-8T-EjJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rsj-6U-qoO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-312" y="-24"/>
         </scene>
     </scenes>
     <resources>
+        <image name="camera" width="25" height="25"/>
+        <image name="home" width="25" height="25"/>
+        <image name="setting" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
