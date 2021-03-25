@@ -136,9 +136,12 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
                     
         let Comments = cell.Comment.text
-        cell.Comment.text = ""
         
-                   
+           
+        cell.Comment.text = ""
+    
+                
+        
         // コメントを更新する
        
             var updateValue: FieldValue
@@ -159,4 +162,5 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
           
         }
     }
+
 

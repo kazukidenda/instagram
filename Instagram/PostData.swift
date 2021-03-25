@@ -44,7 +44,7 @@ class PostData: NSObject {
             if self.likes.firstIndex(of: myid) != nil {
                 //myidがあればいいねを押していると認識する
                 self.isLiked = true
-                
+               
             }
         }
     }

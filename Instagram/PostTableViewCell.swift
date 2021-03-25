@@ -10,13 +10,13 @@ import FirebaseUI
 
 
 class PostTableViewCell: UITableViewCell {
-   
+    
     @IBOutlet weak var postImageView: UIImageView!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
-   @IBOutlet weak var handleCommentButton: UIButton!
+    @IBOutlet weak var handleCommentButton: UIButton!
     @IBOutlet weak var Comment: UITextField!
     @IBOutlet weak var CommentHyouji: UILabel!
     @IBOutlet weak var Toukousya: UILabel!
@@ -28,10 +28,10 @@ class PostTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     //PostDataの内容をセルに表示
@@ -65,14 +65,19 @@ class PostTableViewCell: UITableViewCell {
             self.likeButton.setImage(buttonImage, for: .normal)
         }
         
-       //コメント内容の表示
+        //コメント内容の表示
+        let comment = postData.comments
+       
+        if postData.comments.count > 0 {
+            self.CommentHyouji.text = "\(postData.comments)"
+        } else {
+            
+            CommentHyouji.text = ""
+            
+            
+        }
         
-        CommentHyouji.text = "\(postData.comments)"
-    
-    
-    
+        
+        
     }
-    
-    
-    
 }
