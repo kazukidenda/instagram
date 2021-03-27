@@ -19,7 +19,7 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var handleCommentButton: UIButton!
     @IBOutlet weak var Comment: UITextField!
     @IBOutlet weak var CommentHyouji: UILabel!
-    @IBOutlet weak var Toukousya: UILabel!
+ 
     
     
     
@@ -66,18 +66,35 @@ class PostTableViewCell: UITableViewCell {
         }
         
         //コメント内容の表示
+        
+        
         let comment = postData.comments
-       
+        print("内容",postData.comments)
+        
+        
+        
+        
         if postData.comments.count > 0 {
             self.CommentHyouji.text = "\(postData.comments)"
+            
         } else {
-            
-            CommentHyouji.text = ""
-            
+           CommentHyouji.text = ""
             
         }
         
         
+        var CommentKetugou = ""
+        for Comment in postData.comments {
+            print("Commentsの内容", Comment)
+            CommentKetugou = CommentKetugou+Comment + "\n"
+            
+        }
+        CommentHyouji.text = CommentKetugou
+        
         
     }
+    
+    
+    
 }
+

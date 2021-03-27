@@ -36,14 +36,14 @@ class PostViewController: UIViewController {
             //投稿処理をキャンセルし先頭画面に戻る
             UIApplication.shared.windows.first{ $0.isKeyWindow }?.rootViewController?.dismiss(animated: true, completion: nil)
             return
-        
-    }
+            
+        }
         //FireStoneに投稿データを保存する
         let name = Auth.auth().currentUser?.displayName
         let postDic = [
             "name":name!,
-        "caption": self.textField.text!,
-        "date": FieldValue.serverTimestamp(),
+            "caption": self.textField.text!,
+            "date": FieldValue.serverTimestamp(),
         ] as [String : Any]
         postRef.setData(postDic)
         //HUDで投稿完了を表示する
@@ -52,18 +52,18 @@ class PostViewController: UIViewController {
         UIApplication.shared.windows.first{ $0.isKeyWindow }?.rootViewController?.dismiss(animated: true, completion: nil)
         }
     }
-        
+    
     //キャンセルボタンをタップしたときに呼ばれるメソッド
     @IBAction func handleCancelButton(_ sender: Any) {
         //加工画面に戻る
         self.dismiss(animated: true, completion: nil)
     }
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    
+        
         //受け取った画像をImageViewに設定する
         imageView.image = image
     }
